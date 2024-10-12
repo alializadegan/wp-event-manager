@@ -1,0 +1,134 @@
+/* General Table Styles */
+.event-table-container {
+    margin: 30px 0;
+    overflow-x: auto; /* For responsiveness */
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.event-table th, .event-table td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    white-space: nowrap; /* Prevents content from wrapping */
+}
+
+.event-table th {
+    background-color: #0073aa;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+}
+
+.event-table td {
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects on Table Rows */
+.event-table tr:hover td {
+    background-color: #f1f1f1;
+    transform: translateY(-2px); /* A subtle lift effect */
+}
+
+/* Styling Event Titles */
+.event-table td a {
+    color: #0073aa;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.event-table td a:hover {
+    color: #005885;
+}
+
+/* Special Columns */
+.event-table .event-date,
+.event-table .event-location {
+    color: #666;
+    font-size: 14px;
+}
+
+.event-table .event-rsvp {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.event-table .event-rsvp:hover {
+    color: #218838;
+    text-decoration: underline;
+}
+
+/* Filter Form Styling */
+.event-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.event-filter label {
+    font-weight: bold;
+    color: #444;
+}
+
+.event-filter select,
+.event-filter input[type="date"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.event-filter select:focus,
+.event-filter input[type="date"]:focus {
+    border-color: #0073aa;
+}
+
+.event-filter input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-filter input[type="submit"]:hover {
+    background-color: #005885;
+}
+
+/* Responsive Design for Table */
+@media (max-width: 768px) {
+    .event-table th, .event-table td {
+        font-size: 14px;
+    }
+
+    .event-table-container {
+        overflow-x: scroll;
+    }
+
+    .event-filter {
+        flex-direction: column;
+    }
+}
