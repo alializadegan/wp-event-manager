@@ -1,0 +1,35 @@
+msgid "Event Manager"
+msgstr "مدیر رویداد"
+
+msgid "Events"
+msgstr "رویدادها"
+
+msgid "Add New Event"
+msgstr "اضافه کردن رویداد جدید"
+
+msgid "Event Date"
+msgstr "تاریخ رویداد"
+
+msgid "Event Location"
+msgstr "محل رویداد"
+
+msgid "RSVP Count"
+msgstr "تعداد RSVP"
+
+msgid "Event Type"
+msgstr "نوع رویداد"
+
+msgid "Search Events"
+msgstr "جستجوی رویدادها"
+
+msgid "Filter Events"
+msgstr "فیلتر کردن رویدادها"
+
+msgid "No events found."
+msgstr "رویدادی پیدا نشد."
+
+msgid "Published"
+msgstr "منتشر شده"
+
+msgid "Update Event"
+msgstr "به‌روزرسانی رویداد"
